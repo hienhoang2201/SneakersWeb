@@ -1,0 +1,121 @@
+﻿@model Sneakers.Models.DTO.OrderDTO
+
+@{
+    ViewBag.Title = "CreateOrder";
+    Layout = "~/Views/Shared/_Layout_noImage.cshtml";
+}
+
+
+
+
+
+<div class="sec sec__shopcart">
+    <div class="container">
+        <div class="row">
+            <div class="sec__shopcart__info col-md-7 col-sm-7 col-xs-12">
+                <div class="box-user__info panel">
+                    <div class="title">Thông tin khách hàng</div>
+                    <div class="content">
+
+                        @using (Html.BeginForm("CreateOrder", "ShoppingCart", FormMethod.Post, new { }))
+
+                        {
+
+                            <div class="row">
+                                <div class="col-md-6 col-xs-12 col-sm-6">
+                                    <div class="form-group">
+
+                                        <div class="label">Họ tên:</div>
+                                        <input type="text" class="form-control" placeholder="Nhập họ tên*" name="fullname" required />
+                                    </div>
+                                </div>
+
+
+                                <div class="col-md-6 col-xs-12 col-sm-6">
+                                    <div class="form-group">
+
+                                        <div class="label">Số điện thoại:</div>
+
+                                        <input type="text" class="form-control" placeholder="Nhập số điện thoại*" name="phone" maxlength="10" required />
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="label">Email</div>
+                                <input type="email" class="form-control" placeholder="Nhập email*" name="email" />
+                            </div>
+
+                            <div class="form-group">
+                                <div class="label">Địa chỉ:</div>
+                                <input type="text" class="form-control" placeholder="Nhập địa chỉ giao hàng*" name="address" required />
+                            </div>
+                            <div class="form-group">
+                                <div class="label">Thời gian giao hàng:</div>
+                                <input type="text" class="form-control" placeholder="Nhập thời gian giao hàng*" name="date" required />
+                            </div>
+
+                            <button type="submit" class="form-control" style="background-color:skyblue; font-weight:bold">
+                                Đặt hàng
+
+                            </button>
+
+                        }
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-5 col-sm-5 col-xs-12">
+                <div class="title">Giỏ hàng</div>
+                <div class="content">
+                    <div class=" tab-content">
+                        <div class="nav-steps">
+                            <div class="dropdown__head">
+                                <span class="number">@Model.listItem.Count</span>
+                                <span class="txt">Sản phẩm trong giỏ hàng</span>
+                            </div>
+                        </div>
+                        <div class="product__shopcart">
+                            <div class="product__list">
+                                @foreach (var item in Model.listItem)
+                                {
+                                    <form action="/ShoppingCart/UpdateItem">
+                                        @using (Html.BeginForm("UpdateItem", "ShoppingCart"))
+                                        {
+                                            <div class="product__list__item">
+                                                <div class="product__img">
+                                                    <img src="/Areas/Admin/Content/images/@item.ImageLink">
+                                                </div>
+                                                <div class="product__name">
+                                                    @item.ProName
+                                                    <a href="/ShoppingCart/DeleteItem/@item.ProductID" class="product__delete">
+                                                        <span class="icon -ap icon-trash2"></span>
+                                                    </a>
+                                                </div>
+                                                <input name="id" value="@item.ProductID" style="display:none;" />
+                                                <div class="product__price">
+                                                    <div class="product__price__regular">@item.Price.Value.ToString("N0")<span class="unit">đ</span></div>
+                                                    <input type="number" name="quantity" class="input-number" value="@item.Quantity">
+                                                    <button type="submit">Cập nhật</button>
+                                                    <div class="clearfix"></div>
+                                                </div>
+
+                                            </div>
+                                            
+                                        }
+                                    </form>
+                                }
+                            </div>
+                        </div>
+                        <div class="dropdown__bottom">
+                            <div class="total">Tổng cộng: <span class="product__price number">@Model.Amount.Value.ToString("N0")<span class="unit"></span>đ</span></div>
+
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+

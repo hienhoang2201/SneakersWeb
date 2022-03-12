@@ -1,0 +1,108 @@
+﻿@model Sneakers.Models.Entities.PRODUCT
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/_Layout_noImage.cshtml";
+}
+
+<div class="sec list-product">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3 col-sm-3 col-xs-12 col-left">
+                @{ Html.RenderAction("ProductCate", "Product");}
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-9 col-sm-9 col-xs-12 col-right">
+                        <!---->
+                        <div class="box-category">
+                            <div class="ct-detail-pr">
+                                <div class="row ct-detail-top">
+                                    <div class="product__view__image col-md-6 col-sm-6 col-xs-12">
+                                        <div class="row">
+                                            <div class="col-sm-9 col-xs-12">
+                                                <div class="product__view__image--list">
+                                                    <a href="#" data-fancybox="gallery" class="fancybox">
+                                                        <img src="/Areas/Admin/Content/images/@Model.ImageLink" style="width: 450px; height: 450px;" alt="name your product"
+                                                             @*class="elevate__zoom" data-zoom-image="uploads/pr-large2.jpg" id="elevate__zoom" title="product-2">*@
+                                                    </a>
+                                                    @*<div class="hidden">
+                                                            <a href="uploads/pr-large2.jpg" data-fancybox="gallery" class="fancybox">
+                                                                <img src="uploads/pr-large2.jpg" alt="">
+                                                            </a>
+                                                            <a href="uploads/pr-large2.jpg" data-fancybox="gallery" class="fancybox">
+                                                                <img src="uploads/pr-large2.jpg" alt="">
+                                                            </a>
+                                                            <a href="uploads/pr-large2.jpg" data-fancybox="gallery" class="fancybox">
+                                                                <img src="uploads/pr-large2.jpg" alt="">
+                                                            </a>
+                                                        </div>*@
+                                                </div>
+                                            </div>
+                                            @*<div class="col-sm-3 col-xs-12">
+                                                <div class="product__view__image--thumb" id="image-additional-carousel">
+                                                    <div class="item">
+                                                        <a href="uploads/pr-large2.jpg" data-image="uploads/pr-large2.jpg" class="elevate__zoom">
+                                                            <img src="uploads/pr-large2.jpg" data-zoom-image="uploads/pr-large2.jpg" title="product-2" alt="">
+                                                        </a>
+                                                        <a href="uploads/pr-large2.jpg" data-image="uploads/pr-large2.jpg" class="elevate__zoom">
+                                                            <img src="uploads/pr-large2.jpg" data-zoom-image="uploads/pr-large2.jpg" title="product-2" alt="">
+                                                        </a>
+                                                        <a href="uploads/pr-large2.jpg" data-image="uploads/pr-large2.jpg" class="elevate__zoom">
+                                                            <img src="uploads/pr-large2.jpg" data-zoom-image="uploads/pr-large2.jpg" title="product-2" alt="">
+                                                        </a>
+                                                    </div>
+                                                    <div class="item">
+                                                        <a href="uploads/pr-large2.jpg" data-image="uploads/pr-large2.jpg" class="elevate__zoom">
+                                                            <img src="uploads/pr-large2.jpg" data-zoom-image="uploads/pr-large2.jpg" title="product-2" alt="">
+                                                        </a>
+                                                        <a href="uploads/pr-large2.jpg" data-image="uploads/pr-large2.jpg" class="elevate__zoom">
+                                                            <img src="uploads/pr-large2.jpg" data-zoom-image="uploads/pr-large2.jpg" title="product-2" alt="">
+                                                        </a>
+                                                        <a href="uploads/pr-large2.jpg" data-image="uploads/pr-large2.jpg" class="elevate__zoom">
+                                                            <img src="uploads/pr-large2.jpg" data-zoom-image="uploads/pr-large2.jpg" title="product-2" alt="">
+                                                        </a>
+                                                    </div>
+                                                </div>*@
+                                        </div>
+                                    </div>
+
+                                    <!---->
+                                    <div class="col-md-6 col-sm-6 col-xs-12 product__view__content">
+                                        <div class="name" style="font-size:30px">@Html.DisplayFor(model => model.ProName)</div>
+                                        @*<div class="socical">
+                                                <img src="uploads/socical.jpg" alt="">
+                                            </div>*@
+                                        <div class="product__price product__price__view">
+                                            <span class="product__price--txt" style="font-size:20px">Giá bán: </span> <div class="product__price__regular">@Html.DisplayFor(model => model.Price) <span class="unit">đ</span></div>
+                                        </div>
+                                        <div class="product__view__info">
+                                            <p class="info" style="font-size:20px">Tình trạng: <span class="name">@Html.DisplayFor(model => model.ProStatus)</span></p>
+                                        </div>
+                                        <div class="product__view__des" style="font-size:20px">
+                                            Danh mục:<span class="name">
+                                                @Html.DisplayFor(model => model.CATEGORY.CateName)
+                                            </span>
+                                        </div>
+                                        <div class="product__view__des" style="font-size:20px">
+                                            Mô tả:
+                                            <span class="name">
+                                                @Html.DisplayFor(model => model.ProDescription)
+                                            </span>
+                                        </div>
+                                        <div class="form-control" style="width:80px; height:40px ; background-color:skyblue">
+                                            <span class="name">
+                                                @Html.ActionLink("Back", "Index")
+                                                </span>
+                                        </div>
+                                    </div>
+
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

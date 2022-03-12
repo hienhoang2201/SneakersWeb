@@ -1,0 +1,44 @@
+﻿@model Sneakers.Models.Entities.CATEGORY
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Areas/Admin/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>CATEGORY</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.CateName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CateName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CateDescription)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CateDescription)
+        </dd>
+
+
+        @*<dt>
+            @Html.DisplayNameFor(model => model.AdminID)
+        </dt>*@
+
+        @*<dd>
+            @Html.DisplayFor(model => model.AdminID)
+        </dd>*@
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.CateID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

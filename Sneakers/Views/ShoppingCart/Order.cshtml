@@ -1,0 +1,66 @@
+﻿@model Sneakers.Models.DTO.OrderDTO
+
+@{
+    ViewBag.Title = "Order";
+    Layout = "~/Views/Shared/_Layout_noImage.cshtml";
+}
+
+<div class="sec sec__shopcart">
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-5 col-sm-5 col-xs-12">
+                <div class=" tab-content">
+                    <div class="nav-steps">
+                        <div class="dropdown__head">
+                            <span class="number"style="font-size:20px; font-weight:bold">@Model.listItem.Count</span>
+                            <span class="txt" style="font-size:20px; font-weight:bold">sản phẩm trong giỏ hàng</span>
+                        </div>
+                        <div class="product__shopcart">
+                            <div class="product__list">
+                                @foreach (var item in Model.listItem)
+                                {
+                                    <form action="/ShoppingCart/UpdateItem">
+
+                                        @*@using (Html.BeginForm("UpdateItem", "ShoppingCart"))*@
+                                        @*{*@
+                                        <div class="product__list__item">
+                                            <div class="product__img">
+                                                <img src="/Areas/Admin/Content/images/@item.ImageLink">
+                                            </div>
+                                            <div class="product__name">
+                                                @item.ProName
+                                                <a href="/ShoppingCart/DeleteItem/@item.ProductID" class="product__delete">
+                                                    <span class="icon -ap icon-trash2"></span>
+                                                </a>
+                                            </div>
+                                            <input name="id" value="@item.ProductID" style="display:none;" />
+                                            <div class="product__price">
+                                                <div class="product__price__regular">@item.Price.Value.ToString("N0")<span class="unit">đ</span></div>
+                                                <input type="number" name="quantity" class="input-number" style="width:unset" value="@item.Quantity">
+                                                <button type="submit">Cập nhật</button>
+                                                <div class="clearfix"></div>
+                                            </div>
+
+                                        </div>
+
+                                        @*}*@
+                                    </form>
+                                }
+                            </div>
+                        </div>
+                        <div class="dropdown__bottom">
+                            <div class="total">Tổng cộng: <span class="product__price number">@Model.Amount.Value.ToString("N0")<span class="unit"></span>đ</span></div>
+                            <a href="CreateOrder" class="btn__checkout">Tiến hành đặt hàng</a>
+
+                        </div>
+                        @*<button class="btn__back">
+                                @Html.ActionLink("Back", "Index")
+                            </button>*@
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+

@@ -1,0 +1,16 @@
+﻿@model List<Sneakers.Models.Entities.CATEGORY>
+<div class="box category">
+    <div class="title-name">
+        Danh mục sản phẩm
+    </div>
+    <div class="list">
+        <ul>
+            @foreach (var item in Model)
+            {
+                <li class="category-item @*category--active*@">
+                <li><a href="@Url.Action("cate","Product",new { id = item.CateID})" class="category-link">@item.CateName</a></li>
+                </li>
+            }
+        </ul>
+    </div>
+</div>

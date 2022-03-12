@@ -1,0 +1,183 @@
+﻿@using PagedList.Mvc
+
+@model PagedList.IPagedList<Sneakers.Areas.Admin.Models.DTO.ProductDTO>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>LIST OF PRODUCTS</h2>
+
+
+<div class="form-search">
+    @using (Html.BeginForm("Index", "Admin", FormMethod.Get, new { }))
+    {
+       
+        <div class="row">
+            <div class="col-md-12">
+                <div class="row">
+                    <div class="col-4">
+                        <div class="">
+                            <input type="text" class="form-control" name="keywords" placeholder="Keywords" value="@ViewBag.keywords">
+                        </div>
+                    </div>
+                    <div class="col-2">
+                        <div class="">
+                            <select class="form-control" name="categoryId">
+                                @foreach (var item in ViewBag.cat)
+                                {
+                                    <option value="@item.CateID">@item.CateName</option>
+                                }
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-2">
+                        <div class="">
+                            <input type="text" class="form-control" name="minPrice" placeholder="Lowest price" value="@ViewBag.minPrice">
+                        </div>
+                    </div>
+                    <div class="col-2">
+                        <div class="">
+                            <input type="text" class="form-control" name="maxPrice" placeholder="Highest Price" value="@ViewBag.maxPrice">
+                        </div>
+                    </div>
+                    <div class="col-2">
+                        <div class="btn-search">
+                            <button type="submit" class="btn btn-default btn-pro" title="Search" style="background-color:antiquewhite;width:70px; height:38px ">
+                                <i class="fa fa-search"></i>
+                            </button>
+                            <a href="~/Admin/Admin" class="btn btn-default btn-pro" title="Reload" style="background-color: antiquewhite; width: 70px; height: 38px">
+                                <i class="fas fa-sync-alt"></i>
+
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    }
+
+</div>
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+
+
+<table class="table table-bordered table-hover table-striped" >
+
+    @*<caption>PRODUCT</caption>*@
+
+    <tr>
+        <th>
+            ProName
+        </th>
+        <th>
+            Image
+        </th>
+        <th>
+            Description
+        </th>
+        <th>
+            Price
+        </th>
+        <th>
+            Status
+        </th>
+        <th>
+            Category
+        </th>
+
+        <th></th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.ProName)
+            </td>
+            <td>
+                <img src="/Areas/Admin/Content/images/@item.ImageLink" style="width: 80px; height: 80px;" />
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ProDescription)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Price)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ProStatus)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.CateName)
+            </td>
+
+            <td>
+                @Html.ActionLink("Edit", "Edit", new { id = item.ProductID }) |
+                @Html.ActionLink("Details", "Details", new { id = item.ProductID }) |
+                @Html.ActionLink("Delete", "Delete", new { id = item.ProductID })
+            </td>
+        </tr>
+    }
+
+</table>
+<ul class="pagination">
+    Page @(Model.PageCount<Model.PageNumber? 0: Model.PageNumber) of @Model.PageCount
+    @Html.PagedListPager(Model, pageNum => Url.Action("Index", new { pageNum }))
+    </ul>
+    <style>
+        .pagination {
+            margin-top: 24px;
+        }
+
+            .pagination a {
+                color: black;
+                float: left;
+                padding: 12px 18px;
+                text-decoration: none;
+            }
+
+            .pagination li {
+                background-color: #e9e9e9;
+                border-radius: 5px;
+                margin-left: 4px;
+            }
+
+            .pagination .active {
+                background-color: dodgerblue;
+                color: white;
+                border-radius: 5px;
+            }
+
+            .pagination a:hover:not(.active) {
+                background-color: #ddd;
+                border-radius: 5px;
+            }
+    </style>
+<style type="text/css">
+    table, th, td {
+        border: 1px solid black;
+        border-collapse: collapse;
+        text-align: center;
+        vertical-align: middle;
+    }
+    th {
+        background-color:lightskyblue;
+    }
+   /* caption {
+        caption-side: top;
+        text-align: center;
+        vertical-align: top;
+        */font-weight: bold;
+    }
+   /* tr:hover {
+        background-color: #ddd;
+        cursor: pointer;
+    }*/
+    p {
+        vertical-align: text-bottom;
+    }
+ 
+
+</style>

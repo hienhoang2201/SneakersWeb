@@ -1,0 +1,235 @@
+﻿
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <title>SNEAKERS</title>
+    <meta charset="utf-8" />
+    <meta name="keywords" content="It, it solution,solution, techonogy,internet" />
+    <link href="https://plus.google.com/114644939574462223089" rel="author">
+    <meta content="IE=edge" http-equiv="X-UA-Compatible" />
+    <meta content="width=device-width, initial-scale=1" name="viewport" id="viewport" />
+    <meta content="tranggarden" name="description">
+    <meta content="IE=edge" http-equiv="X-UA-Compatible" />
+
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport" id="viewport" />
+    <meta content="index, follow" name="ROBOTS">
+    <meta name="format-detection" content="telephone=no">
+    <!-- General style -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,600,700&amp;subset=vietnamese" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="~/us/vendor/css/font-awesome.css">
+    <link rel="stylesheet" type="text/css" href="~/us/vendor/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="~/us/vendor/css/slick.css">
+    <link rel="stylesheet" type="text/css" href="~/us/vendor/css/bootstrap-select.min.css">
+    <link rel="stylesheet" type="text/css" href="~/us/vendor/css/jquery.fancybox.min.css">
+    <link rel="stylesheet" type="text/css" href="~/us/vendor/css/ap8.css">
+    <link rel="stylesheet" type="text/css" href="~/us/css/style.css">
+
+</head>
+
+<body>
+
+    <div class="common-overlay"></div>
+    <header class="header">
+        <div class="banner">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3 col-sm-3 col-xs-12">
+                        <div class="logo">
+                            <img src="~/us/uploads/logo1.jpg" />@*" alt="logo" />*@
+                        </div>
+                    </div>
+
+                    <div class="col-md-9 col-sm-9 col-xs-12 col-right-headtop">
+
+                        <div class="pull-left">
+                            @using (Html.BeginForm("Index", "Product", FormMethod.Get))
+                            {
+                                <div class="box-search">
+                                    <div class="form-input">
+                                        <input type="text" class="form-control" name="key" placeholder="Tìm kiếm sản phẩm..." value="@ViewBag.key">
+                                        <button type="submit" class="btn btn__search"><span class="fa fa-search"></span></button>
+                                    </div>
+
+                                </div>
+                            }
+                        </div>
+
+                        <div class="menu-top pull-right">
+                            <div class="col-menu-top">
+                                <div class="hotline"><span class="-ap icon-phone-handset"></span> Hotline: 037 6081 845</div>
+                                <div class="header-top__shopcart">
+                                    <div class="icon">
+                                        <span class="-ap icon-cart"></span>
+                                    </div>
+                                    <div class="headline">Giỏ hàng <span class="number-cart">@Html.Action("CountItem", "Home")</span></div>
+                                    <div class="dropdown__shop__cart">
+                                        <div class="dropdown__head">
+                                            <span class="number">@Html.Action("CountItem", "Home")</span>
+                                            <span class="txt">Sản phẩm trong giỏ hàng</span>
+                                        </div>
+                                        @{ if (Session["cartAdmin"] != null)
+                                            {
+                                                <div class="dropdown__bottom">
+                                                    <a href="ShoppingCart/Order" class="btn__checkout">Xem giỏ hàng</a>
+                                                </div>
+                                            }
+                                        }
+
+                                    </div>
+                                </div>
+
+
+                                <div class="header-top__login">
+                                    <div class="acc-mobi">
+                                        <div class="title">Hien Hoang</div>
+                                        <ul class="menu-icons__sub">
+                                            <li class="menu-icons__sub__item"><a class="menu-icon__sub-link" data-toggle="modal" data-target="#login" data-original-title="" title=""><span class="icon icon-lock_outline -ap"></span> Đăng xuất</a></li>
+                                            <li class="menu-icons__sub__item"><a class="menu-icon__sub-link" data-toggle="modal" data-target="#register" data-original-title="" title=""><span class="icon icon-lock_open -ap"></span> Cài đặt</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+                <div class="nav-toggle">
+                    <span class="fa fa-bars"></span>
+                </div>
+            </div>
+        </div>
+        <div class="header-menu">
+            <div class="container">
+                <div class="menu-category">
+                    <div class="catalog__list">
+                        <ul class="catalog__wrap">
+                            <li class="catalog__item">
+                                <a href="@Url.Action("Index","Home")" class="catalog__link">Trang chủ</a>
+                            </li>
+                            <li class="catalog__item">
+                                <a href="@Url.Action("Gioithieu","GioiThieu")" class="catalog__link">
+                                    Giới thiệu
+                                </a>
+                            </li>
+                            <li class="catalog__item -sub">
+                                <a href="@Url.Action("Index","Product")" class="catalog__link">Sản phẩm</a>
+                                @*<div class="catalog__sub">
+                                    <div class="row">
+                                        <div class="col-md-4 col-sm-5 col-xs-12">
+                                            <ul class="list-cat__sub">
+                                                <li class="catalog-sub__item"><a href="" class="catalog-sub__link"><span class="fa fa-caret-right icon"></span>iPhone</a></li>
+                                                <li class="catalog-sub__item"><a href="" class="catalog-sub__link"><span class="fa fa-caret-right icon"></span>Samsung</a></li>
+                                                <li class="catalog-sub__item"><a href="" class="catalog-sub__link"><span class="fa fa-caret-right icon"></span>Oppo</a></li>
+                                                <li class="catalog-sub__item"><a href="" class="catalog-sub__link"><span class="fa fa-caret-right icon"></span>Huawei</a></li>
+                                                <li class="catalog-sub__item"><a href="" class="catalog-sub__link"><span class="fa fa-caret-right icon"></span>Asus</a></li>
+                                                <li class="catalog-sub__item"><a href="" class="catalog-sub__link"><span class="fa fa-caret-right icon"></span>Acer</a></li>
+                                                <li class="catalog-sub__item"><a href="" class="catalog-sub__link"><span class="fa fa-caret-right icon"></span>Sony</a></li>
+                                                <li class="catalog-sub__item"><a href="" class="catalog-sub__link"><span class="fa fa-caret-right icon"></span>Khác</a></li>
+                                            </ul>
+                                        </div>*@
+                                @*<div class="col-dm-8 col-sm-7 col-xs-12">
+                                        <div class="catalog__title"><span>MỚI NHẤT HÔM NAY</span></div>
+                                        <div class="catalog__product">
+                                            <div class="product__image">
+                                                <a href="#">
+                                                    <img src="~/us/uploads/product.jpg" /> alt="">
+                                                </a>
+                                                <div class="product__status -new">New </div>
+                                            </div>
+                                            <a href="#" class="product__name">Giày xăng đan bệt trang trí nổi bật SD01033</a>
+                                            <div class="product__price">
+                                                <div class="product__price__old">17.790.000 <span class="unit">đ</span></div>
+                                                <div class="product__price__regular">17.790.000 <span class="unit">đ</span></div>
+
+
+                                            </div>
+                                        </div>
+                                    </div>*@
+                                @*</div>
+                                    </div>*@
+                            </li>
+                            @*<li class="catalog__item"><a href="#" class="catalog__link"> Tin tức</a></li>*@
+                            <li class="catalog__item"><a href="@Url.Action("Index","Kienthuc")" class="catalog__link">Kiến thức về giày</a></li>
+                            @*<li class="catalog__item"><a href="#" class="catalog__link"> Bản đồ</a></li>*@
+                            <li class="catalog__item"><a href="@Url.Action("Index","Dichvu")" class="catalog__link"> Dịch vụ</a></li>
+                            @*<li class="catalog__item"><a href="#" class="catalog__link">Liên hệ</a></li>*@
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- End menu -->
+    @*<div class="nav-anchor"></div>
+        <div class="hero-banner">
+            <div class="container">
+                <div class="slider-wrapper theme-default">
+                    <div class="slider apollo_slides nivoSlider">
+                        <a href="#"><img src="~/us/uploads/slider.jpg" /> </a>
+                        <a href="#"><img src="~/us/uploads/slider2.jpg" /></a>
+                    </div>
+                </div>
+            </div>
+        </div>*@
+    <section class="content">
+        @RenderBody()
+    </section>
+    <!-- footer -->
+    <footer class="footer">
+        <!-- End topfoter -->
+        <!-- footer -->
+        <div class="container">
+            <div class="footer__box">
+                <div class="row ">
+                    <div class="col-md-4  col-sm-4 col-xs-12">
+                        <h3 class="footer__title ">Liên hệ</h3>
+                        <div class="contact">
+                            <p class="name-comp">TẬP ĐOÀN SNEAKER HIÊN HOÀNG</p>
+                            <p class="info ">
+                                <span class="icon -ap icon-location3"></span>
+                                <span class="name-header texU disb fow">Địa chỉ: </span>
+                                <span class="disb">Tâng 72, Keangnam Landmark power, Phạm Hùng, Nam Từ Liêm, Hà Nội</span>
+                            </p>
+                        </div>
+                        <div class="contact">
+                            <p class="info ">
+                                <span class="icon -ap  icon-envelope2"></span>
+                                <span class="name-header texU disb fow">Email:</span>
+                                <span class="disb">hoanghien200076@gmail.com</span>
+                            </p>
+                        </div>
+                        <div class="contact">
+
+                            <p class="info ">
+                                <span class="icon fa fa-phone"></span>
+                                <span class="name-header texU disb fow"> Phone: </span>
+                                <span class="disb">08.22.01.2000 - 08.08.02.2000</span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </footer>
+
+
+    <a class="scroll-top"><span class="fa fa-angle-up"></span></a>
+    <!-- end footer -->
+    <script type="text/javascript" src="~/us/vendor/js/jquery.2.1.1.min.js"></script>
+    <script type="text/javascript" src="~/us/vendor/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="~/us/vendor/js/slick.min.js"></script>
+    <script type="text/javascript" src="~/us/vendor/js/bootstrap-select.min.js"></script>
+    <script type="text/javascript" src="~/us/vendor/js/jquery.nivo.slider.pack.js"></script>
+    <script type="text/javascript" src="~/us/vendor/js/jquery.elevateZoom-3.0.8.min.js"></script>
+    <script type="text/javascript" src="~/us/vendor/js/jquery.fancybox.min.js"></script>
+    <script type="text/javascript" src="~/us/vendor/js/nouislider.min.js"></script>
+    <script type="text/javascript" src="~/us/js/custom.js"></script>
+
+</body>
+
+</html>
+

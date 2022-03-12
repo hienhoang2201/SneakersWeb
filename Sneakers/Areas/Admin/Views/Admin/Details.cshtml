@@ -1,0 +1,130 @@
+﻿@model Sneakers.Models.Entities.PRODUCT
+@*@model Sneakers.Areas.Admin.Models.DTO*@
+
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details of Product</h2>
+
+<div class=" card">
+    <dl class="dl-horizontal">
+        <div class="form-control" style="width:150px; height:30px ; background-color:darkgrey; display:flex;">
+            <dt>
+                @Html.DisplayNameFor(model => model.ProName)
+            </dt>
+        </div>
+
+        <dd>
+            @Html.DisplayFor(model => model.ProName)
+        </dd>
+        <div class="form-control" style="width: 150px;height: 30px;background-color: darkgrey">
+            <dt>
+                @Html.DisplayNameFor(model => model.ImageLink)
+            </dt>
+        </div>
+        <dd>
+            @Html.DisplayFor(model => model.ImageLink)
+            <img src="/Areas/Admin/Content/images/@Model.ImageLink" style="width: 70px; height: 70px; @*margin-right:15px;*@" />
+
+        </dd>
+        <div class="form-control" style="width: 150px;height: 30px;background-color: darkgrey">
+            <dt>
+                @Html.DisplayNameFor(model => model.ProDescription)
+            </dt>
+        </div>
+        <dd>
+            @Html.DisplayFor(model => model.ProDescription)
+        </dd>
+        <div class="form-control" style="width: 150px;height: 30px;background-color: darkgrey">
+            <dt>
+                @Html.DisplayNameFor(model => model.Price)
+            </dt>
+        </div>
+        <dd>
+            @Html.DisplayFor(model => model.Price)
+        </dd>
+
+        @*<dt>
+                @Html.DisplayNameFor(model => model.PromotionalPrice)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.PromotionalPrice)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.StartTime)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.StartTime)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.EndTime)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.EndTime)
+            </dd>*@
+        <div class="form-control" style="width: 150px;height: 30px;background-color: darkgrey">
+            <dt>
+                @Html.DisplayNameFor(model => model.ProStatus)
+            </dt>
+        </div>
+        <dd>
+            @Html.DisplayFor(model => model.ProStatus)
+        </dd>
+        <div class="form-control" style="width: 150px;height: 30px;background-color: darkgrey">
+            <dt>
+                @Html.DisplayNameFor(model => model.CATEGORY.CateName)
+            </dt>
+        </div>
+        <dd>
+            @Html.DisplayFor(model => model.CATEGORY.CateName)
+        </dd>
+        @*<td>
+                @Html.DisplayFor(modelItem => item.CateName)
+            </td>*@
+
+    </dl>
+    <div class="form-control" style="width:70px; height:30px ; background-color:skyblue"
+         @Html.ActionLink("Edit", "Edit", new { id = Model.ProductID })
+</div>
+    <div class="form-control" style="width:100px; height:50px ; background-color:skyblue"
+         @Html.ActionLink("Back to List", "Index")</div>
+</div>
+
+@*<div class="col-md-6 col-sm-6 col-xs-12 product__view__content">
+    <div class="name">
+        <dd>
+            @Html.DisplayFor(model => model.ProName)
+        </dd>
+    </div>
+    <div class="image">
+        <img src="/Areas/Admin/Content/images/@Model.ImageLink" style="width: 450px; height: 450px; margin-right:15px;" />
+    </div>
+    <div class="product__price product__price__view">
+        <span class="product__price--txt">Giá bán</span> <div class="product__price__regular">
+    <dd>
+        @Html.DisplayFor(model => model.Price)
+    </dd><span class="unit">đ</span>
+</div>  
+        <p class="info">Tình trạng: <span class="name">
+            <dd>
+              @Html.DisplayFor(model => model.ProStatus)
+            </dd>
+</span></p>
+    </div>
+    <div class="product__view__des">
+        <dd>
+            @Html.DisplayFor(model => model.ProDescription)
+        </dd>
+    </div>
+</div>*@
+
+
+
+   

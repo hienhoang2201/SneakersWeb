@@ -1,0 +1,61 @@
+﻿@model IEnumerable<Sneakers.Models.Entities.PRODUCT>
+@{
+    ViewBag.Title = "cate";
+    Layout = "~/Views/Shared/_Layout_noImage.cshtml";
+    //var ListProduct = (List<Sneakers.Models.Entities.PRODUCT>)ViewBag.Product;
+}
+
+<div class="sec list-product">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3 col-sm-3 col-xs-12 col-left">
+                @{ Html.RenderAction("ProductCate", "Product");}
+            </div>
+            <div class="col-md-9 col-sm-9 col-xs-12 col-right">
+                <div class="box-ct">
+                    <div class="title-name">
+                        SẢN PHẨM
+                    </div>
+                    <div class="list-ct">
+                        <div class="row">
+
+                            @foreach (var item in Model)
+                            {
+
+                                <div class="col-md-3 col-sm-3 col-xs-6">
+
+
+                                    <div class="product__item">
+                                        <div class="w">
+                                            <div class="product__image">
+                                                <a href="#" class="product__link"><img src="/Areas/Admin/Content/images/@item.ImageLink" style="width: 280px; height: 280px;" alt="name your product"></a>
+                                                <div class="product-item__actions">
+                                                    <a class="btn btn-detail" data-toggle="tooltip" data-placement="top" title="Chi tiết"
+                                                       href="@Url.Action("Details","Product",new { id = item.ProductID})" class="home-link-product">
+
+                                                        <span class="fa fa-eye"></span>
+                                                    </a>
+                                                    <a href="/ShoppingCart/Add/@item.ProductID" class="btn btn-quickview" title="Thêm vào giỏ"><span class="fa fa-cart-plus"></span></a>
+                                                </div>
+                                                <div class="product__overlay"></div>
+                                            </div>
+                                            <h3 class="product__name"><a href="#">@item.ProName</a></h3>
+                                            <div class="product__price">
+                                                <div class="product__price__regular">@item.Price<span class="unit">đ</span></div>
+                                            </div>
+                                            <div class="product__status">@item.ProStatus</div>
+                                            @*<div class="product__">@item.ProStatus</div>*@
+
+                                        </div>
+                                    </div>
+                                </div>
+                            }
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+

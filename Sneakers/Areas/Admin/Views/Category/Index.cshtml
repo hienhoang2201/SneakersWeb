@@ -1,0 +1,68 @@
+﻿@model IEnumerable<Sneakers.Models.Entities.CATEGORY>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Areas/Admin/Views/Shared/_Layout.cshtml";
+}
+
+<h2>CATEGORY</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.CateName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.CateDescription)
+        </th>
+       
+       
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.CateName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.CateDescription)
+        </td>
+             
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.CateID }) |
+            @Html.ActionLink("Details", "Details", new { id=item.CateID }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.CateID })
+        </td>
+    </tr>
+}
+
+</table>
+<style type="text/css">
+    table, th, td {
+        border: 1px solid black;
+        border-collapse: collapse;
+        text-align: center;
+        vertical-align: middle;
+    }
+
+    th {
+        background-color: lightskyblue;
+    }
+    /* caption {
+        caption-side: top;
+        text-align: center;
+        vertical-align: top;
+        */ font-weight: bold;
+    }
+    /* tr:hover {
+        background-color: #ddd;
+        cursor: pointer;
+    }*/
+    p {
+        vertical-align: text-bottom;
+    }
+</style>

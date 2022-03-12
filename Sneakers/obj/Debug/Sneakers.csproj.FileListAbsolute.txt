@@ -1,0 +1,175 @@
+D:\TH CNW\Sneakers\Sneakers\bin\Sneakers.dll.config
+D:\TH CNW\Sneakers\Sneakers\bin\Sneakers.dll
+D:\TH CNW\Sneakers\Sneakers\bin\Sneakers.pdb
+D:\TH CNW\Sneakers\Sneakers\bin\roslyn\csc.exe
+D:\TH CNW\Sneakers\Sneakers\bin\roslyn\csc.exe.config
+D:\TH CNW\Sneakers\Sneakers\bin\roslyn\csc.rsp
+D:\TH CNW\Sneakers\Sneakers\bin\roslyn\csi.exe
+D:\TH CNW\Sneakers\Sneakers\bin\roslyn\csi.exe.config
+D:\TH CNW\Sneakers\Sneakers\bin\roslyn\csi.rsp
+D:\TH CNW\Sneakers\Sneakers\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\TH CNW\Sneakers\Sneakers\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\TH CNW\Sneakers\Sneakers\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+D:\TH CNW\Sneakers\Sneakers\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\TH CNW\Sneakers\Sneakers\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+D:\TH CNW\Sneakers\Sneakers\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\TH CNW\Sneakers\Sneakers\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\TH CNW\Sneakers\Sneakers\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+D:\TH CNW\Sneakers\Sneakers\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+D:\TH CNW\Sneakers\Sneakers\bin\roslyn\Microsoft.Managed.Core.targets
+D:\TH CNW\Sneakers\Sneakers\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\TH CNW\Sneakers\Sneakers\bin\roslyn\Microsoft.Win32.Primitives.dll
+D:\TH CNW\Sneakers\Sneakers\bin\roslyn\System.AppContext.dll
+D:\TH CNW\Sneakers\Sneakers\bin\roslyn\System.Collections.Immutable.dll
+D:\TH CNW\Sneakers\Sneakers\bin\roslyn\System.Console.dll
+D:\TH CNW\Sneakers\Sneakers\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+D:\TH CNW\Sneakers\Sneakers\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+D:\TH CNW\Sneakers\Sneakers\bin\roslyn\System.Diagnostics.StackTrace.dll
+D:\TH CNW\Sneakers\Sneakers\bin\roslyn\System.Globalization.Calendars.dll
+D:\TH CNW\Sneakers\Sneakers\bin\roslyn\System.IO.Compression.dll
+D:\TH CNW\Sneakers\Sneakers\bin\roslyn\System.IO.Compression.ZipFile.dll
+D:\TH CNW\Sneakers\Sneakers\bin\roslyn\System.IO.FileSystem.dll
+D:\TH CNW\Sneakers\Sneakers\bin\roslyn\System.IO.FileSystem.Primitives.dll
+D:\TH CNW\Sneakers\Sneakers\bin\roslyn\System.Net.Http.dll
+D:\TH CNW\Sneakers\Sneakers\bin\roslyn\System.Net.Sockets.dll
+D:\TH CNW\Sneakers\Sneakers\bin\roslyn\System.Reflection.Metadata.dll
+D:\TH CNW\Sneakers\Sneakers\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+D:\TH CNW\Sneakers\Sneakers\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+D:\TH CNW\Sneakers\Sneakers\bin\roslyn\System.Security.Cryptography.Encoding.dll
+D:\TH CNW\Sneakers\Sneakers\bin\roslyn\System.Security.Cryptography.Primitives.dll
+D:\TH CNW\Sneakers\Sneakers\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+D:\TH CNW\Sneakers\Sneakers\bin\roslyn\System.Text.Encoding.CodePages.dll
+D:\TH CNW\Sneakers\Sneakers\bin\roslyn\System.Threading.Tasks.Extensions.dll
+D:\TH CNW\Sneakers\Sneakers\bin\roslyn\System.ValueTuple.dll
+D:\TH CNW\Sneakers\Sneakers\bin\roslyn\System.Xml.ReaderWriter.dll
+D:\TH CNW\Sneakers\Sneakers\bin\roslyn\System.Xml.XmlDocument.dll
+D:\TH CNW\Sneakers\Sneakers\bin\roslyn\System.Xml.XPath.dll
+D:\TH CNW\Sneakers\Sneakers\bin\roslyn\System.Xml.XPath.XDocument.dll
+D:\TH CNW\Sneakers\Sneakers\bin\roslyn\vbc.exe
+D:\TH CNW\Sneakers\Sneakers\bin\roslyn\vbc.exe.config
+D:\TH CNW\Sneakers\Sneakers\bin\roslyn\vbc.rsp
+D:\TH CNW\Sneakers\Sneakers\bin\roslyn\VBCSCompiler.exe
+D:\TH CNW\Sneakers\Sneakers\bin\roslyn\VBCSCompiler.exe.config
+D:\TH CNW\Sneakers\Sneakers\bin\Antlr3.Runtime.dll
+D:\TH CNW\Sneakers\Sneakers\bin\EntityFramework.dll
+D:\TH CNW\Sneakers\Sneakers\bin\EntityFramework.SqlServer.dll
+D:\TH CNW\Sneakers\Sneakers\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\TH CNW\Sneakers\Sneakers\bin\Microsoft.Web.Infrastructure.dll
+D:\TH CNW\Sneakers\Sneakers\bin\Newtonsoft.Json.dll
+D:\TH CNW\Sneakers\Sneakers\bin\PagedList.dll
+D:\TH CNW\Sneakers\Sneakers\bin\PagedList.Mvc.dll
+D:\TH CNW\Sneakers\Sneakers\bin\System.Web.Helpers.dll
+D:\TH CNW\Sneakers\Sneakers\bin\System.Web.Mvc.dll
+D:\TH CNW\Sneakers\Sneakers\bin\System.Web.Optimization.dll
+D:\TH CNW\Sneakers\Sneakers\bin\System.Web.Razor.dll
+D:\TH CNW\Sneakers\Sneakers\bin\System.Web.WebPages.Deployment.dll
+D:\TH CNW\Sneakers\Sneakers\bin\System.Web.WebPages.dll
+D:\TH CNW\Sneakers\Sneakers\bin\System.Web.WebPages.Razor.dll
+D:\TH CNW\Sneakers\Sneakers\bin\WebGrease.dll
+D:\TH CNW\Sneakers\Sneakers\bin\EntityFramework.xml
+D:\TH CNW\Sneakers\Sneakers\bin\EntityFramework.SqlServer.xml
+D:\TH CNW\Sneakers\Sneakers\bin\PagedList.xml
+D:\TH CNW\Sneakers\Sneakers\bin\PagedList.Mvc.xml
+D:\TH CNW\Sneakers\Sneakers\bin\System.Web.Helpers.xml
+D:\TH CNW\Sneakers\Sneakers\bin\System.Web.Mvc.xml
+D:\TH CNW\Sneakers\Sneakers\bin\System.Web.Optimization.xml
+D:\TH CNW\Sneakers\Sneakers\bin\System.Web.Razor.xml
+D:\TH CNW\Sneakers\Sneakers\bin\System.Web.WebPages.xml
+D:\TH CNW\Sneakers\Sneakers\bin\System.Web.WebPages.Deployment.xml
+D:\TH CNW\Sneakers\Sneakers\bin\System.Web.WebPages.Razor.xml
+D:\TH CNW\Sneakers\Sneakers\bin\Newtonsoft.Json.xml
+D:\TH CNW\Sneakers\Sneakers\bin\Antlr3.Runtime.pdb
+D:\TH CNW\Sneakers\Sneakers\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\TH CNW\Sneakers\Sneakers\obj\Debug\Sneakers.csprojAssemblyReference.cache
+D:\TH CNW\Sneakers\Sneakers\obj\Debug\Sneakers.csproj.CoreCompileInputs.cache
+D:\TH CNW\Sneakers\Sneakers\obj\Debug\Sneakers.csproj.CopyComplete
+D:\TH CNW\Sneakers\Sneakers\obj\Debug\Sneakers.dll
+D:\TH CNW\Sneakers\Sneakers\obj\Debug\Sneakers.pdb
+D:\Kì II năm 3\CNW\TH CNW\Sneakers\Sneakers\bin\Sneakers.dll.config
+D:\Kì II năm 3\CNW\TH CNW\Sneakers\Sneakers\bin\Sneakers.dll
+D:\Kì II năm 3\CNW\TH CNW\Sneakers\Sneakers\bin\Sneakers.pdb
+D:\Kì II năm 3\CNW\TH CNW\Sneakers\Sneakers\bin\roslyn\csc.exe
+D:\Kì II năm 3\CNW\TH CNW\Sneakers\Sneakers\bin\roslyn\csc.exe.config
+D:\Kì II năm 3\CNW\TH CNW\Sneakers\Sneakers\bin\roslyn\csc.rsp
+D:\Kì II năm 3\CNW\TH CNW\Sneakers\Sneakers\bin\roslyn\csi.exe
+D:\Kì II năm 3\CNW\TH CNW\Sneakers\Sneakers\bin\roslyn\csi.exe.config
+D:\Kì II năm 3\CNW\TH CNW\Sneakers\Sneakers\bin\roslyn\csi.rsp
+D:\Kì II năm 3\CNW\TH CNW\Sneakers\Sneakers\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\Kì II năm 3\CNW\TH CNW\Sneakers\Sneakers\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\Kì II năm 3\CNW\TH CNW\Sneakers\Sneakers\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+D:\Kì II năm 3\CNW\TH CNW\Sneakers\Sneakers\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\Kì II năm 3\CNW\TH CNW\Sneakers\Sneakers\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+D:\Kì II năm 3\CNW\TH CNW\Sneakers\Sneakers\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\Kì II năm 3\CNW\TH CNW\Sneakers\Sneakers\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\Kì II năm 3\CNW\TH CNW\Sneakers\Sneakers\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+D:\Kì II năm 3\CNW\TH CNW\Sneakers\Sneakers\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+D:\Kì II năm 3\CNW\TH CNW\Sneakers\Sneakers\bin\roslyn\Microsoft.Managed.Core.targets
+D:\Kì II năm 3\CNW\TH CNW\Sneakers\Sneakers\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\Kì II năm 3\CNW\TH CNW\Sneakers\Sneakers\bin\roslyn\Microsoft.Win32.Primitives.dll
+D:\Kì II năm 3\CNW\TH CNW\Sneakers\Sneakers\bin\roslyn\System.AppContext.dll
+D:\Kì II năm 3\CNW\TH CNW\Sneakers\Sneakers\bin\roslyn\System.Collections.Immutable.dll
+D:\Kì II năm 3\CNW\TH CNW\Sneakers\Sneakers\bin\roslyn\System.Console.dll
+D:\Kì II năm 3\CNW\TH CNW\Sneakers\Sneakers\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+D:\Kì II năm 3\CNW\TH CNW\Sneakers\Sneakers\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+D:\Kì II năm 3\CNW\TH CNW\Sneakers\Sneakers\bin\roslyn\System.Diagnostics.StackTrace.dll
+D:\Kì II năm 3\CNW\TH CNW\Sneakers\Sneakers\bin\roslyn\System.Globalization.Calendars.dll
+D:\Kì II năm 3\CNW\TH CNW\Sneakers\Sneakers\bin\roslyn\System.IO.Compression.dll
+D:\Kì II năm 3\CNW\TH CNW\Sneakers\Sneakers\bin\roslyn\System.IO.Compression.ZipFile.dll
+D:\Kì II năm 3\CNW\TH CNW\Sneakers\Sneakers\bin\roslyn\System.IO.FileSystem.dll
+D:\Kì II năm 3\CNW\TH CNW\Sneakers\Sneakers\bin\roslyn\System.IO.FileSystem.Primitives.dll
+D:\Kì II năm 3\CNW\TH CNW\Sneakers\Sneakers\bin\roslyn\System.Net.Http.dll
+D:\Kì II năm 3\CNW\TH CNW\Sneakers\Sneakers\bin\roslyn\System.Net.Sockets.dll
+D:\Kì II năm 3\CNW\TH CNW\Sneakers\Sneakers\bin\roslyn\System.Reflection.Metadata.dll
+D:\Kì II năm 3\CNW\TH CNW\Sneakers\Sneakers\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+D:\Kì II năm 3\CNW\TH CNW\Sneakers\Sneakers\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+D:\Kì II năm 3\CNW\TH CNW\Sneakers\Sneakers\bin\roslyn\System.Security.Cryptography.Encoding.dll
+D:\Kì II năm 3\CNW\TH CNW\Sneakers\Sneakers\bin\roslyn\System.Security.Cryptography.Primitives.dll
+D:\Kì II năm 3\CNW\TH CNW\Sneakers\Sneakers\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+D:\Kì II năm 3\CNW\TH CNW\Sneakers\Sneakers\bin\roslyn\System.Text.Encoding.CodePages.dll
+D:\Kì II năm 3\CNW\TH CNW\Sneakers\Sneakers\bin\roslyn\System.Threading.Tasks.Extensions.dll
+D:\Kì II năm 3\CNW\TH CNW\Sneakers\Sneakers\bin\roslyn\System.ValueTuple.dll
+D:\Kì II năm 3\CNW\TH CNW\Sneakers\Sneakers\bin\roslyn\System.Xml.ReaderWriter.dll
+D:\Kì II năm 3\CNW\TH CNW\Sneakers\Sneakers\bin\roslyn\System.Xml.XmlDocument.dll
+D:\Kì II năm 3\CNW\TH CNW\Sneakers\Sneakers\bin\roslyn\System.Xml.XPath.dll
+D:\Kì II năm 3\CNW\TH CNW\Sneakers\Sneakers\bin\roslyn\System.Xml.XPath.XDocument.dll
+D:\Kì II năm 3\CNW\TH CNW\Sneakers\Sneakers\bin\roslyn\vbc.exe
+D:\Kì II năm 3\CNW\TH CNW\Sneakers\Sneakers\bin\roslyn\vbc.exe.config
+D:\Kì II năm 3\CNW\TH CNW\Sneakers\Sneakers\bin\roslyn\vbc.rsp
+D:\Kì II năm 3\CNW\TH CNW\Sneakers\Sneakers\bin\roslyn\VBCSCompiler.exe
+D:\Kì II năm 3\CNW\TH CNW\Sneakers\Sneakers\bin\roslyn\VBCSCompiler.exe.config
+D:\Kì II năm 3\CNW\TH CNW\Sneakers\Sneakers\bin\Antlr3.Runtime.dll
+D:\Kì II năm 3\CNW\TH CNW\Sneakers\Sneakers\bin\EntityFramework.dll
+D:\Kì II năm 3\CNW\TH CNW\Sneakers\Sneakers\bin\EntityFramework.SqlServer.dll
+D:\Kì II năm 3\CNW\TH CNW\Sneakers\Sneakers\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\Kì II năm 3\CNW\TH CNW\Sneakers\Sneakers\bin\Microsoft.Web.Infrastructure.dll
+D:\Kì II năm 3\CNW\TH CNW\Sneakers\Sneakers\bin\Newtonsoft.Json.dll
+D:\Kì II năm 3\CNW\TH CNW\Sneakers\Sneakers\bin\PagedList.dll
+D:\Kì II năm 3\CNW\TH CNW\Sneakers\Sneakers\bin\PagedList.Mvc.dll
+D:\Kì II năm 3\CNW\TH CNW\Sneakers\Sneakers\bin\System.Web.Helpers.dll
+D:\Kì II năm 3\CNW\TH CNW\Sneakers\Sneakers\bin\System.Web.Mvc.dll
+D:\Kì II năm 3\CNW\TH CNW\Sneakers\Sneakers\bin\System.Web.Optimization.dll
+D:\Kì II năm 3\CNW\TH CNW\Sneakers\Sneakers\bin\System.Web.Razor.dll
+D:\Kì II năm 3\CNW\TH CNW\Sneakers\Sneakers\bin\System.Web.WebPages.Deployment.dll
+D:\Kì II năm 3\CNW\TH CNW\Sneakers\Sneakers\bin\System.Web.WebPages.dll
+D:\Kì II năm 3\CNW\TH CNW\Sneakers\Sneakers\bin\System.Web.WebPages.Razor.dll
+D:\Kì II năm 3\CNW\TH CNW\Sneakers\Sneakers\bin\WebGrease.dll
+D:\Kì II năm 3\CNW\TH CNW\Sneakers\Sneakers\bin\EntityFramework.xml
+D:\Kì II năm 3\CNW\TH CNW\Sneakers\Sneakers\bin\EntityFramework.SqlServer.xml
+D:\Kì II năm 3\CNW\TH CNW\Sneakers\Sneakers\bin\PagedList.xml
+D:\Kì II năm 3\CNW\TH CNW\Sneakers\Sneakers\bin\PagedList.Mvc.xml
+D:\Kì II năm 3\CNW\TH CNW\Sneakers\Sneakers\bin\System.Web.Helpers.xml
+D:\Kì II năm 3\CNW\TH CNW\Sneakers\Sneakers\bin\System.Web.Mvc.xml
+D:\Kì II năm 3\CNW\TH CNW\Sneakers\Sneakers\bin\System.Web.Optimization.xml
+D:\Kì II năm 3\CNW\TH CNW\Sneakers\Sneakers\bin\System.Web.Razor.xml
+D:\Kì II năm 3\CNW\TH CNW\Sneakers\Sneakers\bin\System.Web.WebPages.xml
+D:\Kì II năm 3\CNW\TH CNW\Sneakers\Sneakers\bin\System.Web.WebPages.Deployment.xml
+D:\Kì II năm 3\CNW\TH CNW\Sneakers\Sneakers\bin\System.Web.WebPages.Razor.xml
+D:\Kì II năm 3\CNW\TH CNW\Sneakers\Sneakers\bin\Newtonsoft.Json.xml
+D:\Kì II năm 3\CNW\TH CNW\Sneakers\Sneakers\bin\Antlr3.Runtime.pdb
+D:\Kì II năm 3\CNW\TH CNW\Sneakers\Sneakers\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\Kì II năm 3\CNW\TH CNW\Sneakers\Sneakers\obj\Debug\Sneakers.csprojAssemblyReference.cache
+D:\Kì II năm 3\CNW\TH CNW\Sneakers\Sneakers\obj\Debug\Sneakers.csproj.CoreCompileInputs.cache
+D:\Kì II năm 3\CNW\TH CNW\Sneakers\Sneakers\obj\Debug\Sneakers.csproj.CopyComplete
+D:\Kì II năm 3\CNW\TH CNW\Sneakers\Sneakers\obj\Debug\Sneakers.dll
+D:\Kì II năm 3\CNW\TH CNW\Sneakers\Sneakers\obj\Debug\Sneakers.pdb
+D:\Kì II năm 3\CNW\TH CNW\Sneakers\Sneakers\obj\Debug\Sneakers.csproj.AssemblyReference.cache
